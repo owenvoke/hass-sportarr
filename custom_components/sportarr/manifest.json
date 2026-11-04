@@ -1,0 +1,11 @@
+{
+  "domain": "sportarr",
+  "name": "Sportarr",
+  "codeowners": ["@owenvoke"],
+  "config_flow": true,
+  "documentation": "https://github.com/owenvoke/hass-sportarr",
+  "integration_type": "service",
+  "iot_class": "local_polling",
+  "issue_tracker": "https://github.com/owenvoke/hass-sportarr/issues",
+  "version": "0.0.0"
+}

@@ -1,0 +1,77 @@
+{
+  "config": {
+    "abort": {
+      "already_configured": "This Sportarr instance is already configured.",
+      "reauth_successful": "Re-authentication was successful.",
+      "reconfigure_successful": "Re-configuration was successful."
+    },
+    "error": {
+      "cannot_connect": "Could not connect to Sportarr. Check the URL and that the instance is reachable.",
+      "invalid_api_key": "Invalid API key.",
+      "not_sportarr": "The URL doesn't appear to be a Sportarr instance.",
+      "unknown": "Unexpected error."
+    },
+    "step": {
+      "user": {
+        "data": {
+          "api_key": "API key",
+          "url": "URL",
+          "verify_ssl": "Verify SSL certificate"
+        },
+        "data_description": {
+          "verify_ssl": "Turn off if Sportarr uses a self-signed certificate."
+        }
+      },
+      "reconfigure": {
+        "data": {
+          "api_key": "API key",
+          "url": "URL",
+          "verify_ssl": "Verify SSL certificate"
+        },
+        "data_description": {
+          "verify_ssl": "Turn off if Sportarr uses a self-signed certificate."
+        }
+      },
+      "reauth_confirm": {
+        "title": "Re-authenticate {name}",
+        "description": "The API key is no longer valid. You can find it at: {api_token_url}",
+        "data": {
+          "api_key": "API key"
+        }
+      }
+    }
+  },
+  "entity": {
+    "binary_sensor": {
+      "health": {
+        "name": "Health"
+      }
+    },
+    "sensor": {
+      "queue": {
+        "name": "Queue",
+        "unit_of_measurement": "downloads"
+      },
+      "pending_imports": {
+        "name": "Pending imports",
+        "unit_of_measurement": "imports"
+      },
+      "missing": {
+        "name": "Missing events",
+        "unit_of_measurement": "events"
+      },
+      "cutoff_unmet": {
+        "name": "Cutoff unmet events",
+        "unit_of_measurement": "events"
+      }
+    }
+  },
+  "exceptions": {
+    "invalid_auth": {
+      "message": "The Sportarr API key is no longer valid."
+    },
+    "update_failed": {
+      "message": "Could not fetch data from Sportarr: {error}"
+    }
+  }
+}

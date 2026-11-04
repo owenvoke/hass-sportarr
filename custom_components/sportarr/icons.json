@@ -1,0 +1,10 @@
+{
+  "entity": {
+    "sensor": {
+      "queue": { "default": "mdi:download" },
+      "pending_imports": { "default": "mdi:import" },
+      "missing": { "default": "mdi:calendar-search" },
+      "cutoff_unmet": { "default": "mdi:arrow-up-bold-circle-outline" }
+    }
+  }
+}
